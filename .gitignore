@@ -1,0 +1,14 @@
+# Environment variables and secrets
+.env
+*.env
+
+# Maven build output
+target/
+
+# Java compiled files
+*.class
+
+# IDE files
+.vscode/
+.idea/
+*.iml
