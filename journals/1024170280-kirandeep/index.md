@@ -1,4 +1,4 @@
-# Frontend Development Journal
+# Journal
 
 **Name:** Kirandeep Kaur
 **Role:** Frontend 
