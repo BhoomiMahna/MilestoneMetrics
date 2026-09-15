@@ -1,8 +1,11 @@
 import { useState } from 'react'
 
-function Auth() {
+function Auth({ onLogin }) {
   const [activeTab, setActiveTab] = useState('login')
-
+ const handleDemoLogin = (e) => {
+    e.preventDefault(); // Stops page refresh
+    onLogin(); // Switches to Questionnaire
+  }
   return (
     <div className="min-h-screen bg-[#F4EBDD] text-[#171513] p-6 flex items-center justify-center">
 
@@ -84,7 +87,7 @@ function Auth() {
           <div className="mb-8">
 
             <p className="text-sm font-medium opacity-60 mb-2">
-              HELLO THERE 👋
+              HELLO THERE
             </p>
 
             <h2 className="text-4xl font-black tracking-tight">
@@ -140,7 +143,7 @@ function Auth() {
 
             {/* LOGIN */}
             {activeTab === 'login' && (
-              <form className="space-y-5">
+  <form className="space-y-5" onSubmit={handleDemoLogin}>
 
                 <div>
                   <label className="text-xs font-bold uppercase tracking-wide">
@@ -188,7 +191,7 @@ function Auth() {
 
             {/* SIGN UP */}
             {activeTab === 'signup' && (
-              <form className="space-y-5">
+  <form className="space-y-5" onSubmit={handleDemoLogin}>
 
                 <div>
                   <label className="text-xs font-bold uppercase tracking-wide">
