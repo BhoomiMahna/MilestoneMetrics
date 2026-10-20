@@ -46,10 +46,22 @@
             <artifactId>spring-boot-starter-validation</artifactId>
         </dependency>
 
-        <!-- PostgreSQL Driver -->
+        <!-- PostgreSQL Driver (production / Supabase) -->
         <dependency>
             <groupId>org.postgresql</groupId>
             <artifactId>postgresql</artifactId>
+            <scope>runtime</scope>
+        </dependency>
+
+        <!--
+            H2 in-memory database — used ONLY by the "dev" Spring profile for local
+            preview when the real PostgreSQL/Supabase database is unavailable. It is
+            never used by the default (production) profile, which still requires the
+            real DB_URL/DB_USERNAME/DB_PASSWORD. See application-dev.properties.
+        -->
+        <dependency>
+            <groupId>com.h2database</groupId>
+            <artifactId>h2</artifactId>
             <scope>runtime</scope>
         </dependency>
 
@@ -90,6 +102,19 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+            <!--
+                The Surefire test JVM in this environment is newer than the Byte Buddy
+                version bundled with Mockito officially supports. net.bytebuddy.experimental
+                lets Mockito keep creating mocks on newer JDKs; -XX:+EnableDynamicAgentLoading
+                silences the self-attach warning for Mockito's inline agent.
+            -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <configuration>
+                    <argLine>-Dnet.bytebuddy.experimental=true -XX:+EnableDynamicAgentLoading</argLine>
+                </configuration>
             </plugin>
         </plugins>
     </build>

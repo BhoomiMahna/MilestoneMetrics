@@ -1,0 +1,855 @@
+<mxfile host="app.diagrams.net" agent="ClaudeCode" pages="7">
+  <diagram id="dfd-level0" name="DFD Level 0 – Context Diagram">
+    <mxGraphModel dx="1400" dy="900" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1750" pageHeight="1150" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="l0_title" value="DFD Level 0 – Context Diagram : Personalized Financial Goal-Achievement and Income-Growth Platform" style="text;html=1;align=center;verticalAlign=middle;fontStyle=1;fontSize=21;fontColor=#1F3864;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="80" y="20" width="1600" height="40" as="geometry" />
+        </mxCell>
+        <!-- CENTRAL PROCESS -->
+        <mxCell id="l0_sys" value="&lt;b&gt;0.0&lt;/b&gt;&lt;br&gt;Personalized Financial&lt;br&gt;Goal-Achievement and&lt;br&gt;Income-Growth Platform" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ede7f6;strokeColor=#1F3864;strokeWidth=2;fontSize=14;fontColor=#1F3864;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="640" y="390" width="410" height="300" as="geometry" />
+        </mxCell>
+        <!-- EXTERNAL ENTITIES -->
+        <mxCell id="l0_user" value="&lt;b&gt;USER&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="70" y="470" width="220" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="l0_auth" value="&lt;b&gt;AUTHENTICATION&lt;br&gt;SERVICE&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=13;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="540" y="90" width="240" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="l0_bank" value="&lt;b&gt;BANK /&lt;br&gt;PAYMENT SERVICE&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#b1ddf0;strokeColor=#10739e;fontSize=13;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="910" y="90" width="240" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="l0_reminder" value="&lt;b&gt;REMINDER /&lt;br&gt;NOTIFICATION SERVICE&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=13;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="1410" y="250" width="250" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="l0_sidehustle" value="&lt;b&gt;SIDE-HUSTLE&lt;br&gt;PLATFORMS&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=13;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="1410" y="560" width="250" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="l0_reward" value="&lt;b&gt;REWARD /&lt;br&gt;COUPON PROVIDER&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFE599;strokeColor=#d6b656;fontSize=13;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="740" y="890" width="260" height="100" as="geometry" />
+        </mxCell>
+        <!-- USER FLOWS -->
+        <mxCell id="l0_u_in" value="Registration / Login Details, Profile Information,&lt;br&gt;Questionnaire Responses, Financial Goals,&lt;br&gt;Income Details, Expense Details, Bill Information,&lt;br&gt;Reward Redemption Request" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;startArrow=none;strokeColor=#37474F;strokeWidth=1.4;fontSize=9;fontColor=#1F3864;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.25;entryX=0;entryY=0.35;" edge="1" parent="1" source="l0_user" target="l0_sys">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="l0_u_out" value="Authentication Result / JWT, Personalized Financial Plan,&lt;br&gt;Dashboard Data, Progress &amp; Achievement Data,&lt;br&gt;Financial Insights, Bill / Goal Reminders,&lt;br&gt;Side-Hustle Suggestions, Rewards / Coupons, Notifications" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;startArrow=none;dashed=1;strokeColor=#78909C;strokeWidth=1.4;fontSize=9;fontColor=#37474F;labelBackgroundColor=#FFFFFF;exitX=0;exitY=0.75;entryX=1;entryY=0.75;" edge="1" parent="1" source="l0_sys" target="l0_user">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <!-- AUTHENTICATION FLOWS -->
+        <mxCell id="l0_auth_req" value="Authentication Request" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;startArrow=none;strokeColor=#37474F;strokeWidth=1.4;fontSize=9;fontColor=#1F3864;labelBackgroundColor=#FFFFFF;exitX=0.35;exitY=0;entryX=0.35;entryY=1;" edge="1" parent="1" source="l0_sys" target="l0_auth">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="l0_auth_res" value="Authentication Result" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;startArrow=none;dashed=1;strokeColor=#78909C;strokeWidth=1.4;fontSize=9;fontColor=#37474F;labelBackgroundColor=#FFFFFF;exitX=0.6;exitY=1;entryX=0.6;entryY=0;" edge="1" parent="1" source="l0_auth" target="l0_sys">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <!-- BANK FLOWS -->
+        <mxCell id="l0_bank_req" value="Transaction Sync Request" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;startArrow=none;strokeColor=#37474F;strokeWidth=1.4;fontSize=9;fontColor=#1F3864;labelBackgroundColor=#FFFFFF;exitX=0.65;exitY=0;entryX=0.4;entryY=1;" edge="1" parent="1" source="l0_sys" target="l0_bank">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="l0_bank_data" value="Transaction Data" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;startArrow=none;dashed=1;strokeColor=#78909C;strokeWidth=1.4;fontSize=9;fontColor=#37474F;labelBackgroundColor=#FFFFFF;exitX=0.6;exitY=1;entryX=0.85;entryY=0;" edge="1" parent="1" source="l0_bank" target="l0_sys">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <!-- REMINDER FLOWS -->
+        <mxCell id="l0_rem_req" value="Reminder / Notification Request" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;startArrow=none;strokeColor=#37474F;strokeWidth=1.4;fontSize=9;fontColor=#1F3864;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.3;entryX=0;entryY=0.5;" edge="1" parent="1" source="l0_sys" target="l0_reminder">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="l0_rem_status" value="Notification Status" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;startArrow=none;dashed=1;strokeColor=#78909C;strokeWidth=1.4;fontSize=9;fontColor=#37474F;labelBackgroundColor=#FFFFFF;exitX=0;exitY=0.8;entryX=1;entryY=0.2;" edge="1" parent="1" source="l0_reminder" target="l0_sys">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <!-- SIDE-HUSTLE FLOWS -->
+        <mxCell id="l0_sh_req" value="Opportunity Request" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;startArrow=none;strokeColor=#37474F;strokeWidth=1.4;fontSize=9;fontColor=#1F3864;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.7;entryX=0;entryY=0.5;" edge="1" parent="1" source="l0_sys" target="l0_sidehustle">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="l0_sh_data" value="Side-Hustle Opportunities" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;startArrow=none;dashed=1;strokeColor=#78909C;strokeWidth=1.4;fontSize=9;fontColor=#37474F;labelBackgroundColor=#FFFFFF;exitX=0;exitY=0.2;entryX=1;entryY=0.85;" edge="1" parent="1" source="l0_sidehustle" target="l0_sys">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <!-- REWARD FLOWS -->
+        <mxCell id="l0_rew_req" value="Reward / Coupon Request" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;startArrow=none;strokeColor=#37474F;strokeWidth=1.4;fontSize=9;fontColor=#1F3864;labelBackgroundColor=#FFFFFF;exitX=0.4;exitY=1;entryX=0.35;entryY=0;" edge="1" parent="1" source="l0_sys" target="l0_reward">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="l0_rew_data" value="Reward / Coupon Data" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;startArrow=none;dashed=1;strokeColor=#78909C;strokeWidth=1.4;fontSize=9;fontColor=#37474F;labelBackgroundColor=#FFFFFF;exitX=0.65;exitY=0;entryX=0.6;entryY=1;" edge="1" parent="1" source="l0_reward" target="l0_sys">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <!-- LEGEND -->
+        <mxCell id="l0_legend" value="Legend" style="rounded=1;whiteSpace=wrap;html=1;dashed=1;dashPattern=6 4;fillColor=#FFFFFF;strokeColor=#666666;verticalAlign=top;fontStyle=1;fontSize=12;spacingTop=6;" vertex="1" parent="1">
+          <mxGeometry x="70" y="760" width="330" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="l0_lg_e" value="" style="rounded=1;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="85" y="795" width="30" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="l0_lg_e_t" value="External Entity" style="text;html=1;align=left;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="122" y="794" width="120" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="l0_lg_p" value="0.0" style="ellipse;html=1;fillColor=#ede7f6;strokeColor=#1F3864;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="85" y="822" width="34" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="l0_lg_p_t" value="Process" style="text;html=1;align=left;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="122" y="824" width="120" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="l0_lg_in_l" style="html=1;endArrow=block;startArrow=none;strokeColor=#37474F;strokeWidth=1.4;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="230" y="805" as="sourcePoint" />
+            <mxPoint x="275" y="805" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="l0_lg_in_t" value="Input data flow" style="text;html=1;align=left;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="282" y="795" width="110" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="l0_lg_out_l" style="html=1;endArrow=block;startArrow=none;dashed=1;strokeColor=#78909C;strokeWidth=1.4;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="230" y="835" as="sourcePoint" />
+            <mxPoint x="275" y="835" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="l0_lg_out_t" value="Output / return flow" style="text;html=1;align=left;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="282" y="825" width="130" height="20" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="dfd-level1" name="DFD Level 1 – Financial Platform">
+    <mxGraphModel dx="455" dy="292" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2050" pageHeight="1500" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="l1_title" parent="1" style="text;html=1;align=center;verticalAlign=middle;fontStyle=1;fontSize=21;fontColor=#1F3864;whiteSpace=wrap;" value="DFD Level 1 – Personalized Financial Goal-Achievement and Income-Growth Platform" vertex="1">
+          <mxGeometry height="40" width="1700" x="120" y="15" as="geometry" />
+        </mxCell>
+        <mxCell id="p1_user" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=14;fontStyle=1;verticalAlign=middle;" value="&lt;b&gt;E1&lt;/b&gt;&lt;br&gt;User" vertex="1">
+          <mxGeometry height="1120" width="170" x="60" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="p1_1" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=11;verticalAlign=middle;" value="&lt;b&gt;1.0&lt;/b&gt;&lt;br&gt;User Authentication &amp;&lt;br&gt;Profile Management" vertex="1">
+          <mxGeometry height="160" width="160" x="390" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="p1_2" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=11;verticalAlign=middle;" value="&lt;b&gt;2.0&lt;/b&gt;&lt;br&gt;Questionnaire &amp;&lt;br&gt;Financial Assessment" vertex="1">
+          <mxGeometry height="160" width="160" x="390" y="370" as="geometry" />
+        </mxCell>
+        <mxCell id="p1_3" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=11;verticalAlign=middle;" value="&lt;b&gt;3.0&lt;/b&gt;&lt;br&gt;Income &amp; Expense&lt;br&gt;Management" vertex="1">
+          <mxGeometry height="160" width="160" x="390" y="590" as="geometry" />
+        </mxCell>
+        <mxCell id="p1_4" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=11;verticalAlign=middle;" value="&lt;b&gt;4.0&lt;/b&gt;&lt;br&gt;Goal &amp; Financial&lt;br&gt;Plan Management" vertex="1">
+          <mxGeometry height="160" width="160" x="390" y="810" as="geometry" />
+        </mxCell>
+        <mxCell id="p1_6" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=11;verticalAlign=middle;" value="&lt;b&gt;6&lt;/b&gt;&lt;b style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;.0&lt;/b&gt;&lt;div&gt;Bills &amp;amp; Reminder&lt;br&gt;Management&lt;/div&gt;" vertex="1">
+          <mxGeometry height="160" width="160" x="390" y="1050" as="geometry" />
+        </mxCell>
+        <mxCell id="p1_5" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#b0e3e6;strokeColor=#0e8088;fontSize=11;verticalAlign=middle;" value="&lt;b&gt;5.0&lt;/b&gt;&lt;br&gt;Dashboard &amp;&lt;br&gt;Progress Tracking" vertex="1">
+          <mxGeometry height="160" width="160" x="1120" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="p1_9" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#b1ddf0;strokeColor=#10739e;fontSize=11;verticalAlign=middle;" value="&lt;b&gt;9.0&lt;/b&gt;&lt;br&gt;Reports &amp;&lt;br&gt;Financial Insights" vertex="1">
+          <mxGeometry height="160" width="160" x="1120" y="610" as="geometry" />
+        </mxCell>
+        <mxCell id="p1_7" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FCE4D6;strokeColor=#d79b00;fontSize=11;verticalAlign=middle;" value="&lt;b&gt;7.0&lt;/b&gt;&lt;br&gt;Side-Hustle&lt;br&gt;Recommendation" vertex="1">
+          <mxGeometry height="160" width="160" x="1120" y="860" as="geometry" />
+        </mxCell>
+        <mxCell id="p1_8" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFE599;strokeColor=#d6b656;fontSize=11;verticalAlign=middle;" value="&lt;b&gt;8.0&lt;/b&gt;&lt;br&gt;Rewards &amp; Achievement&lt;br&gt;Management" vertex="1">
+          <mxGeometry height="160" width="160" x="1120" y="1110" as="geometry" />
+        </mxCell>
+        <mxCell id="p1_d1" parent="1" style="shape=datastore;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=11;" value="D1 | User Data" vertex="1">
+          <mxGeometry height="70" width="200" x="650" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="p1_d2" parent="1" style="shape=datastore;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=11;" value="D2 | Questionnaire &amp; Profile Data" vertex="1">
+          <mxGeometry height="70" width="200" x="650" y="400" as="geometry" />
+        </mxCell>
+        <mxCell id="p1_d3" parent="1" style="shape=datastore;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=11;" value="D3 | Financial Transactions" vertex="1">
+          <mxGeometry height="70" width="200" x="650" y="620" as="geometry" />
+        </mxCell>
+        <mxCell id="p1_d4" parent="1" style="shape=datastore;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=11;" value="D4 | Goals &amp; Financial Plans" vertex="1">
+          <mxGeometry height="70" width="200" x="650" y="840" as="geometry" />
+        </mxCell>
+        <mxCell id="p1_d5" parent="1" style="shape=datastore;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=11;" value="D5 | Bills &amp; Reminders" vertex="1">
+          <mxGeometry height="70" width="200" x="650" y="1080" as="geometry" />
+        </mxCell>
+        <mxCell id="p1_d6" parent="1" style="shape=datastore;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=11;" value="D6 | Progress &amp; Streaks" vertex="1">
+          <mxGeometry height="70" width="200" x="1420" y="470" as="geometry" />
+        </mxCell>
+        <mxCell id="p1_d7" parent="1" style="shape=datastore;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=11;" value="D7 | Rewards &amp; Coupons" vertex="1">
+          <mxGeometry height="70" width="200" x="1420" y="1150" as="geometry" />
+        </mxCell>
+        <mxCell id="p1_e2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=12;fontStyle=1;" value="&lt;b&gt;E2&lt;/b&gt;&lt;br&gt;Authentication Service" vertex="1">
+          <mxGeometry height="80" width="210" x="650" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="p1_e3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#b1ddf0;strokeColor=#10739e;fontSize=12;fontStyle=1;" value="&lt;b&gt;E3&lt;/b&gt;&lt;br&gt;Bank / Payment APIs" vertex="1">
+          <mxGeometry height="80" width="210" x="920" y="560" as="geometry" />
+        </mxCell>
+        <mxCell id="p1_e4b" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=11;fontStyle=1;" value="&lt;b&gt;E4&lt;/b&gt;&lt;br&gt;Reminder / Notification Service&lt;br&gt;&lt;i&gt;(duplicate of E4)&lt;/i&gt;" vertex="1">
+          <mxGeometry height="90" width="210" x="900" y="1070" as="geometry" />
+        </mxCell>
+        <mxCell id="p1_e5" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;fontStyle=1;" value="&lt;b&gt;E5&lt;/b&gt;&lt;br&gt;Side-Hustle Platforms" vertex="1">
+          <mxGeometry height="90" width="220" x="1700" y="880" as="geometry" />
+        </mxCell>
+        <mxCell id="p1_e6" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFE599;strokeColor=#d6b656;fontSize=12;fontStyle=1;" value="&lt;b&gt;E6&lt;/b&gt;&lt;br&gt;Reward / Coupon Provider" vertex="1">
+          <mxGeometry height="90" width="220" x="1700" y="1040" as="geometry" />
+        </mxCell>
+        <mxCell id="p1_e4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=12;fontStyle=1;" value="&lt;b&gt;E4&lt;/b&gt;&lt;br&gt;Reminder / Notification Service" vertex="1">
+          <mxGeometry height="90" width="220" x="1700" y="1200" as="geometry" />
+        </mxCell>
+        <mxCell id="f1" edge="1" parent="1" source="p1_user" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;startArrow=none;strokeColor=#37474F;strokeWidth=1.4;fontSize=9;fontColor=#1F3864;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.03;entryX=0;entryY=0.4;" target="p1_1" value="Login / Registration Details">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="f2" edge="1" parent="1" source="p1_1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;startArrow=none;strokeColor=#37474F;strokeWidth=1.4;fontSize=9;fontColor=#1F3864;labelBackgroundColor=#FFFFFF;exitX=0.4;exitY=0;entryX=0.35;entryY=1;" target="p1_e2" value="Authentication Request">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="f3" edge="1" parent="1" source="p1_e2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;startArrow=none;dashed=1;strokeColor=#78909C;strokeWidth=1.4;fontSize=9;fontColor=#37474F;labelBackgroundColor=#FFFFFF;exitX=0.65;exitY=1;entryX=0.65;entryY=0;" target="p1_1" value="Authentication Result / JWT">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="f4" edge="1" parent="1" source="p1_1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;startArrow=none;strokeColor=#37474F;strokeWidth=1.4;fontSize=9;fontColor=#1F3864;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.35;entryX=0;entryY=0.5;" target="p1_d1" value="User Credentials">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="f5" edge="1" parent="1" source="p1_1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;startArrow=none;strokeColor=#37474F;strokeWidth=1.4;fontSize=9;fontColor=#1F3864;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.7;entryX=0;entryY=0.3;" target="p1_d2" value="User Profile">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="f6" edge="1" parent="1" source="p1_1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;startArrow=none;dashed=1;strokeColor=#78909C;strokeWidth=1.4;fontSize=9;fontColor=#37474F;labelBackgroundColor=#FFFFFF;exitX=0;exitY=0.6;entryX=1;entryY=0.02;" target="p1_user" value="Login Result / JWT / Profile Status">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="f7" edge="1" parent="1" source="p1_user" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;startArrow=none;strokeColor=#37474F;strokeWidth=1.4;fontSize=9;fontColor=#1F3864;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.2;entryX=0;entryY=0.5;" target="p1_2" value="Questionnaire Responses">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="f8" edge="1" parent="1" source="p1_2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;startArrow=none;strokeColor=#37474F;strokeWidth=1.4;fontSize=9;fontColor=#1F3864;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.4;entryX=0;entryY=0.7;" target="p1_d2" value="Profile &amp; Questionnaire Data">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="f9" edge="1" parent="1" source="p1_2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;startArrow=none;strokeColor=#37474F;strokeWidth=1.4;fontSize=9;fontColor=#1F3864;labelBackgroundColor=#FFFFFF;exitX=0.85;exitY=1;entryX=0.2;entryY=0;" target="p1_d4" value="Financial Assessment">
+          <mxGeometry relative="1" x="0.0613" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="631.38" y="515.88" />
+              <mxPoint x="631.38" y="840" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="f10" edge="1" parent="1" source="p1_2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;startArrow=none;strokeColor=#37474F;strokeWidth=1.4;fontSize=9;fontColor=#1F3864;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="p1_4" value="Financial Assessment Results">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="359.56" y="530" />
+              <mxPoint x="359.56" y="915.78" />
+            </Array>
+            <mxPoint x="470.95" y="514.97" as="sourcePoint" />
+            <mxPoint x="470.95" y="794.97" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="f11" edge="1" parent="1" source="p1_user" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;startArrow=none;strokeColor=#37474F;strokeWidth=1.4;fontSize=9;fontColor=#1F3864;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.38;" value="Income / Expense Details">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="266.57" y="575.57" />
+              <mxPoint x="266.57" y="695.39" />
+              <mxPoint x="389.96" y="695.39" />
+            </Array>
+            <mxPoint x="391.19" y="695.38" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="f12" edge="1" parent="1" source="p1_3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;startArrow=none;strokeColor=#37474F;strokeWidth=1.4;fontSize=9;fontColor=#1F3864;labelBackgroundColor=#FFFFFF;" value="Income &amp; Expense Records">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="657.13" y="727.13" />
+            </Array>
+            <mxPoint x="657.14" y="688" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="f13" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;startArrow=none;strokeColor=#37474F;strokeWidth=1.4;fontSize=9;fontColor=#1F3864;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.25;entryX=0;entryY=0.35;" value="Transaction Sync Request">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="541.64" y="586.18" />
+              <mxPoint x="920" y="586.18" />
+            </Array>
+            <mxPoint x="541.5541752799893" y="623.1129123600052" as="sourcePoint" />
+            <mxPoint x="920" y="576.89" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="f14" edge="1" parent="1" source="p1_e3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;startArrow=none;dashed=1;strokeColor=#78909C;strokeWidth=1.4;fontSize=9;fontColor=#37474F;labelBackgroundColor=#FFFFFF;exitX=0;exitY=0.7;entryX=1;entryY=0.15;" target="p1_3" value="Bank Transaction Data">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="f15" edge="1" parent="1" source="p1_3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;startArrow=none;strokeColor=#37474F;strokeWidth=1.4;fontSize=9;fontColor=#1F3864;labelBackgroundColor=#FFFFFF;exitX=0.85;exitY=0;entryX=0;entryY=0.85;" target="p1_5" value="Financial Transaction Data">
+          <mxGeometry relative="1" x="-0.015" y="-13" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="515.64" y="533.45" />
+              <mxPoint x="1134.27" y="533.45" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="f16" edge="1" parent="1" source="p1_3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;startArrow=none;strokeColor=#37474F;strokeWidth=1.4;fontSize=9;fontColor=#1F3864;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.75;entryX=0;entryY=0.35;" target="p1_9" value="Transaction History">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1102.6" y="705.84" />
+              <mxPoint x="1102.6" y="667.04" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="f17" edge="1" parent="1" source="p1_user" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;startArrow=none;strokeColor=#37474F;strokeWidth=1.4;fontSize=9;fontColor=#1F3864;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.55;entryX=0;entryY=0.5;" target="p1_4" value="Goals / Target Timeline">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="f18" edge="1" parent="1" source="p1_4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;startArrow=none;strokeColor=#37474F;strokeWidth=1.4;fontSize=9;fontColor=#1F3864;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" target="p1_d4" value="Goals &amp; Financial Plan">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="f19" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;startArrow=none;strokeColor=#37474F;strokeWidth=1.4;fontSize=9;fontColor=#1F3864;labelBackgroundColor=#FFFFFF;entryX=0.41;entryY=1.008;entryDx=0;entryDy=0;entryPerimeter=0;" value="Goal Targets &amp; Plan">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="577.2" y="847.53" />
+              <mxPoint x="577.2" y="551" />
+              <mxPoint x="1186.67" y="551" />
+            </Array>
+            <mxPoint x="557.04" y="847.57" as="sourcePoint" />
+            <mxPoint x="1186.6000000000001" y="521.28" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="f20" edge="1" parent="1" source="p1_4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;startArrow=none;dashed=1;strokeColor=#78909C;strokeWidth=1.4;fontSize=9;fontColor=#37474F;labelBackgroundColor=#FFFFFF;exitX=0;exitY=0.6;entryX=1;entryY=0.62;" target="p1_user" value="Personalized Financial Plan">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="f21" edge="1" parent="1" source="p1_d3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;startArrow=none;strokeColor=#37474F;strokeWidth=1.4;fontSize=9;fontColor=#1F3864;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.2;entryX=0;entryY=0.65;" target="p1_5" value="Income &amp; Expense Data">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="850.04" y="655.04" />
+              <mxPoint x="909.22" y="655.04" />
+              <mxPoint x="909.22" y="462.67" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="f22" edge="1" parent="1" source="p1_d4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;startArrow=none;strokeColor=#37474F;strokeWidth=1.4;fontSize=9;fontColor=#1F3864;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.2;entryX=0.15;entryY=1;" target="p1_5" value="Goal &amp; Target Data">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="850.05" y="640.05" />
+              <mxPoint x="1137.76" y="640.05" />
+              <mxPoint x="1137.76" y="505.76" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="f23" edge="1" parent="1" source="p1_d6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;startArrow=none;strokeColor=#37474F;strokeWidth=1.4;fontSize=9;fontColor=#1F3864;labelBackgroundColor=#FFFFFF;exitX=0;exitY=0.5;entryX=1;entryY=0.3;" target="p1_5" value="Progress &amp; Streak Data">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="f24" edge="1" parent="1" source="p1_5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;startArrow=none;strokeColor=#37474F;strokeWidth=1.4;fontSize=9;fontColor=#1F3864;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.7;entryX=0.5;entryY=0;" target="p1_d6" value="Updated Progress / Savings / Streaks">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1289.41" y="469.53" />
+              <mxPoint x="1289.41" y="430.65" />
+              <mxPoint x="1520" y="430.65" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="f25" edge="1" parent="1" source="p1_5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;startArrow=none;dashed=1;strokeColor=#78909C;strokeWidth=1.4;fontSize=9;fontColor=#37474F;labelBackgroundColor=#FFFFFF;exitX=0;exitY=0.2;entryX=1;entryY=0.28;" target="p1_user" value="Dashboard / Progress / Achievements">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="960" y="300" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="f26" edge="1" parent="1" source="p1_5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;startArrow=none;strokeColor=#37474F;strokeWidth=1.4;fontSize=9;fontColor=#1F3864;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" target="p1_8" value="Milestone / Progress Data">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1333.33" y="520.33" />
+              <mxPoint x="1333.33" y="1110.33" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="f27" edge="1" parent="1" source="p1_user" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;startArrow=none;strokeColor=#37474F;strokeWidth=1.4;fontSize=9;fontColor=#1F3864;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.78;entryX=0;entryY=0.5;" target="p1_6" value="Bill Information / Reminder Preferences">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="f28" edge="1" parent="1" source="p1_6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;startArrow=none;strokeColor=#37474F;strokeWidth=1.4;fontSize=9;fontColor=#1F3864;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" target="p1_d5" value="Bill &amp; Reminder Records">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="f29" edge="1" parent="1" source="p1_6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;startArrow=none;strokeColor=#37474F;strokeWidth=1.4;fontSize=9;fontColor=#1F3864;labelBackgroundColor=#FFFFFF;exitX=0.85;exitY=1;entryX=0.15;entryY=0;" target="p1_e4b" value="Reminder Request">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="866.05" y="1195.63" />
+              <mxPoint x="866.05" y="1040.05" />
+              <mxPoint x="931.53" y="1040.05" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="f30" edge="1" parent="1" source="p1_e4b" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;startArrow=none;dashed=1;strokeColor=#78909C;strokeWidth=1.4;fontSize=9;fontColor=#37474F;labelBackgroundColor=#FFFFFF;exitX=0.4;exitY=0;entryX=1;entryY=0.85;" target="p1_6" value="Notification Status">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="984.05" y="1060.05" />
+              <mxPoint x="862.89" y="1060.05" />
+              <mxPoint x="862.89" y="1175.84" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="f31" edge="1" parent="1" source="p1_6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;startArrow=none;dashed=1;strokeColor=#78909C;strokeWidth=1.4;fontSize=9;fontColor=#37474F;labelBackgroundColor=#FFFFFF;exitX=0;exitY=0.6;entryX=1;entryY=0.92;" target="p1_user" value="Bill / Goal Reminder">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="f32" edge="1" parent="1" source="p1_d2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;startArrow=none;strokeColor=#37474F;strokeWidth=1.4;fontSize=9;fontColor=#1F3864;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.6;entryX=0;entryY=0.25;" target="p1_7" value="User Skills / Interests / Preferences">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="862.37" y="442.05" />
+              <mxPoint x="862.37" y="900.05" />
+              <mxPoint x="1128.37" y="900.05" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="f33" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;startArrow=none;strokeColor=#37474F;strokeWidth=1.4;fontSize=9;fontColor=#1F3864;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;entryX=0;entryY=0.6;" value="Financial Profile">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="885.42" y="688" />
+              <mxPoint x="885.42" y="958" />
+              <mxPoint x="1120" y="958" />
+            </Array>
+            <mxPoint x="748.4700000000003" y="688" as="sourcePoint" />
+            <mxPoint x="1119.98407773789" y="953.4906425517322" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="f34" edge="1" parent="1" source="p1_7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;startArrow=none;strokeColor=#37474F;strokeWidth=1.4;fontSize=9;fontColor=#1F3864;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.35;entryX=0;entryY=0.35;" target="p1_e5" value="Opportunity Request">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="f35" edge="1" parent="1" source="p1_e5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;startArrow=none;dashed=1;strokeColor=#78909C;strokeWidth=1.4;fontSize=9;fontColor=#37474F;labelBackgroundColor=#FFFFFF;exitX=0;exitY=0.7;entryX=1;entryY=0.7;" target="p1_7" value="Side-Hustle Opportunities">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1691.35" y="942.96" />
+              <mxPoint x="1691.35" y="971.48" />
+              <mxPoint x="1490.04" y="971.48" />
+              <mxPoint x="1490.04" y="969.22" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="f36" edge="1" parent="1" source="p1_7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;startArrow=none;dashed=1;strokeColor=#78909C;strokeWidth=1.4;fontSize=9;fontColor=#37474F;labelBackgroundColor=#FFFFFF;exitX=0;exitY=0.85;entryX=1;entryY=0.72;" target="p1_user" value="Personalized Side-Hustle Suggestions">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="300" y="1000" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="f38" edge="1" parent="1" source="p1_8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;startArrow=none;strokeColor=#37474F;strokeWidth=1.4;fontSize=9;fontColor=#1F3864;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="p1_d6" value="Milestone Status">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1200" y="1080" />
+              <mxPoint x="1520" y="1080" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="f39" edge="1" parent="1" source="p1_8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;startArrow=none;strokeColor=#37474F;strokeWidth=1.4;fontSize=9;fontColor=#1F3864;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.4;entryX=0;entryY=0.5;" target="p1_d7" value="Reward Records">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="f40" edge="1" parent="1" source="p1_8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;startArrow=none;strokeColor=#37474F;strokeWidth=1.4;fontSize=9;fontColor=#1F3864;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.7;entryX=0;entryY=0.4;" target="p1_e6" value="Reward / Coupon Request">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1404" y="1219.67" />
+              <mxPoint x="1404" y="1076.07" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="f41" edge="1" parent="1" source="p1_e6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;startArrow=none;dashed=1;strokeColor=#78909C;strokeWidth=1.4;fontSize=9;fontColor=#37474F;labelBackgroundColor=#FFFFFF;exitX=0;exitY=0.85;entryX=1;entryY=0.7;" target="p1_8" value="Reward / Coupon Data">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1413.33" y="1116.47" />
+              <mxPoint x="1413.33" y="1219.67" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="f42" edge="1" parent="1" source="p1_user" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;startArrow=none;strokeColor=#37474F;strokeWidth=1.4;fontSize=9;fontColor=#1F3864;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.97;entryX=0;entryY=0.65;" target="p1_8" value="Reward Redemption Request">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="330" y="1255" />
+              <mxPoint x="1090" y="1255" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="f43" edge="1" parent="1" source="p1_8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;startArrow=none;dashed=1;strokeColor=#78909C;strokeWidth=1.4;fontSize=9;fontColor=#37474F;labelBackgroundColor=#FFFFFF;exitX=0;exitY=0.9;entryX=0.5;entryY=1;" target="p1_user" value="Reward / Coupon">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="150" y="1290" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="f44" edge="1" parent="1" source="p1_8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;startArrow=none;strokeColor=#37474F;strokeWidth=1.4;fontSize=9;fontColor=#1F3864;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.9;entryX=0;entryY=0.5;" target="p1_e4" value="Reward Notification">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1262.79" y="1245" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="f45" edge="1" parent="1" source="p1_d3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;startArrow=none;strokeColor=#37474F;strokeWidth=1.4;fontSize=9;fontColor=#1F3864;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.85;entryX=0;entryY=0.7;" target="p1_9" value="Transaction History">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="f46" edge="1" parent="1" source="p1_d4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;startArrow=none;strokeColor=#37474F;strokeWidth=1.4;fontSize=9;fontColor=#1F3864;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.7;entryX=0;entryY=0.85;" target="p1_9" value="Financial Goals &amp; Plan">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1050" y="760" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="f47" edge="1" parent="1" source="p1_d6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;startArrow=none;strokeColor=#37474F;strokeWidth=1.4;fontSize=9;fontColor=#1F3864;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;entryX=1;entryY=0.3;" target="p1_9" value="Progress Data">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1520" y="700" />
+              <mxPoint x="1340" y="700" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="f48" edge="1" parent="1" source="p1_9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;startArrow=none;dashed=1;strokeColor=#78909C;strokeWidth=1.4;fontSize=9;fontColor=#37474F;labelBackgroundColor=#FFFFFF;exitX=0;exitY=0.5;entryX=1;entryY=0.55;" target="p1_user" value="Reports / Financial Insights">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="950" y="690" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="p1_legend" parent="1" style="rounded=1;whiteSpace=wrap;html=1;dashed=1;dashPattern=6 4;fillColor=#FFFFFF;strokeColor=#666666;verticalAlign=top;fontStyle=1;fontSize=12;spacingTop=6;" value="Legend" vertex="1">
+          <mxGeometry height="180" width="360" x="1640" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="p1_lg_e" parent="1" style="rounded=1;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;" value="En" vertex="1">
+          <mxGeometry height="22" width="34" x="1655" y="185" as="geometry" />
+        </mxCell>
+        <mxCell id="p1_lg_e_t" parent="1" style="text;html=1;align=left;fontSize=11;" value="External entity (En)" vertex="1">
+          <mxGeometry height="20" width="180" x="1697" y="185" as="geometry" />
+        </mxCell>
+        <mxCell id="p1_lg_p" parent="1" style="ellipse;html=1;fillColor=#b0e3e6;strokeColor=#0e8088;fontSize=9;" value="n.0" vertex="1">
+          <mxGeometry height="28" width="34" x="1655" y="215" as="geometry" />
+        </mxCell>
+        <mxCell id="p1_lg_p_t" parent="1" style="text;html=1;align=left;fontSize=11;" value="Process (numbered)" vertex="1">
+          <mxGeometry height="20" width="180" x="1697" y="218" as="geometry" />
+        </mxCell>
+        <mxCell id="p1_lg_d" parent="1" style="shape=datastore;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=9;" value="Dn | Store" vertex="1">
+          <mxGeometry height="26" width="60" x="1655" y="252" as="geometry" />
+        </mxCell>
+        <mxCell id="p1_lg_d_t" parent="1" style="text;html=1;align=left;fontSize=11;" value="Data store (Dn)" vertex="1">
+          <mxGeometry height="20" width="160" x="1725" y="255" as="geometry" />
+        </mxCell>
+        <mxCell id="p1_lg_f_l" edge="1" parent="1" style="html=1;endArrow=block;startArrow=none;strokeColor=#37474F;strokeWidth=1.4;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1655" y="298" as="sourcePoint" />
+            <mxPoint x="1700" y="298" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="p1_lg_f_t" parent="1" style="text;html=1;align=left;fontSize=11;" value="Data flow (solid = forward, dashed = return)" vertex="1">
+          <mxGeometry height="20" width="330" x="1655" y="305" as="geometry" />
+        </mxCell>
+        <mxCell id="K1gAphtnPWLe_n0swaFQ-1" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;entryX=0.924;entryY=0.232;entryDx=0;entryDy=0;entryPerimeter=0;" target="p1_4" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="555.73" y="847.41" as="sourcePoint" />
+            <mxPoint x="648" y="763" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="dfd-level2" name="DFD Level 2 (1.0 &amp; 4.0)">
+    <mxGraphModel dx="1400" dy="900" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="1200" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="l2_title" value="DFD Level 2 – Decomposition of 1.0 User Authentication &amp; 4.0 Financial Planning" style="text;html=1;align=center;verticalAlign=middle;fontStyle=1;fontSize=21;fontColor=#1F3864;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="80" y="20" width="1450" height="40" as="geometry" />
+        </mxCell>
+        <!-- ===== SECTION A : 1.0 DECOMPOSITION ===== -->
+        <mxCell id="l2_secA" value="Decomposition of Process 1.0 – User Authentication &amp; Profile Management" style="text;html=1;align=left;fontStyle=1;fontSize=14;fontColor=#4527A0;" vertex="1" parent="1">
+          <mxGeometry x="60" y="90" width="800" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="a_user" value="&lt;b&gt;E1&lt;/b&gt;&lt;br&gt;User" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=13;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="240" width="150" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="a_auth" value="&lt;b&gt;E2&lt;/b&gt;&lt;br&gt;Authentication Service" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=12;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="700" y="70" width="210" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="a_11" value="&lt;b&gt;1.1&lt;/b&gt;&lt;br&gt;Receive Login /&lt;br&gt;Registration" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="300" y="230" width="140" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="a_12" value="&lt;b&gt;1.2&lt;/b&gt;&lt;br&gt;Validate&lt;br&gt;Credentials" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="520" y="230" width="140" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="a_13" value="&lt;b&gt;1.3&lt;/b&gt;&lt;br&gt;Authenticate&lt;br&gt;User" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="740" y="230" width="140" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="a_14" value="&lt;b&gt;1.4&lt;/b&gt;&lt;br&gt;Generate&lt;br&gt;JWT" style="ellipse;whiteSpace=wrap;html=1;fillColor=#b0e3e6;strokeColor=#0e8088;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="960" y="230" width="140" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="a_15" value="&lt;b&gt;1.5&lt;/b&gt;&lt;br&gt;Store / Retrieve&lt;br&gt;User Data" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFE599;strokeColor=#d6b656;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="1180" y="230" width="140" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="a_userout" value="&lt;b&gt;E1&lt;/b&gt;&lt;br&gt;User&lt;br&gt;&lt;i&gt;(duplicate)&lt;/i&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="1400" y="240" width="150" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="a_d1" value="D1 | User Data" style="shape=datastore;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="1090" y="470" width="200" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="a_d2" value="D2 | Questionnaire &amp; Profile Data" style="shape=datastore;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="1090" y="570" width="200" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="fa1" value="Login / Registration Details" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;startArrow=none;strokeColor=#37474F;strokeWidth=1.4;fontSize=9;fontColor=#1F3864;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="a_user" target="a_11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fa2" value="Credentials" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;startArrow=none;strokeColor=#37474F;strokeWidth=1.4;fontSize=9;fontColor=#1F3864;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="a_11" target="a_12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fa3" value="Validated Credentials" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;startArrow=none;strokeColor=#37474F;strokeWidth=1.4;fontSize=9;fontColor=#1F3864;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="a_12" target="a_13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fa4" value="Authentication Request" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;startArrow=none;strokeColor=#37474F;strokeWidth=1.4;fontSize=9;fontColor=#1F3864;labelBackgroundColor=#FFFFFF;exitX=0.35;exitY=0;entryX=0.4;entryY=1;" edge="1" parent="1" source="a_13" target="a_auth">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fa5" value="Authentication Result" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;startArrow=none;dashed=1;strokeColor=#78909C;strokeWidth=1.4;fontSize=9;fontColor=#37474F;labelBackgroundColor=#FFFFFF;exitX=0.6;exitY=1;entryX=0.65;entryY=0;" edge="1" parent="1" source="a_auth" target="a_13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fa6" value="Auth Success" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;startArrow=none;strokeColor=#37474F;strokeWidth=1.4;fontSize=9;fontColor=#1F3864;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="a_13" target="a_14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fa7" value="JWT / User Info" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;startArrow=none;strokeColor=#37474F;strokeWidth=1.4;fontSize=9;fontColor=#1F3864;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="a_14" target="a_15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fa8" value="User Credentials" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;startArrow=none;strokeColor=#37474F;strokeWidth=1.4;fontSize=9;fontColor=#1F3864;labelBackgroundColor=#FFFFFF;exitX=0.4;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="a_15" target="a_d1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fa9" value="Stored User Data" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;startArrow=none;dashed=1;strokeColor=#78909C;strokeWidth=1.4;fontSize=9;fontColor=#37474F;labelBackgroundColor=#FFFFFF;exitX=0.1;exitY=0;entryX=0.15;entryY=1;" edge="1" parent="1" source="a_d1" target="a_15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fa10" value="User Profile" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;startArrow=none;strokeColor=#37474F;strokeWidth=1.4;fontSize=9;fontColor=#1F3864;labelBackgroundColor=#FFFFFF;exitX=0.6;exitY=1;entryX=0.7;entryY=0;" edge="1" parent="1" source="a_15" target="a_d2">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1265" y="560" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fa11" value="Login Result / JWT / Profile Status" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;startArrow=none;dashed=1;strokeColor=#78909C;strokeWidth=1.4;fontSize=9;fontColor=#37474F;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.4;entryX=0;entryY=0.5;" edge="1" parent="1" source="a_15" target="a_userout">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <!-- ===== SECTION B : 4.0 DECOMPOSITION ===== -->
+        <mxCell id="l2_secB" value="Decomposition of Process 4.0 – Goal &amp; Financial Plan Management" style="text;html=1;align=left;fontStyle=1;fontSize=14;fontColor=#4527A0;" vertex="1" parent="1">
+          <mxGeometry x="60" y="720" width="800" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="b_user" value="&lt;b&gt;E1&lt;/b&gt;&lt;br&gt;User" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=13;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="850" width="150" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="b_41" value="&lt;b&gt;4.1&lt;/b&gt;&lt;br&gt;Receive&lt;br&gt;Goals" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="300" y="840" width="140" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="b_42" value="&lt;b&gt;4.2&lt;/b&gt;&lt;br&gt;Analyze&lt;br&gt;Financial Profile" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="520" y="840" width="140" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="b_43" value="&lt;b&gt;4.3&lt;/b&gt;&lt;br&gt;Generate&lt;br&gt;Financial Plan" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="740" y="840" width="140" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="b_44" value="&lt;b&gt;4.4&lt;/b&gt;&lt;br&gt;Store Goals&lt;br&gt;&amp; Plan" style="ellipse;whiteSpace=wrap;html=1;fillColor=#b0e3e6;strokeColor=#0e8088;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="960" y="840" width="140" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="b_45" value="&lt;b&gt;4.5&lt;/b&gt;&lt;br&gt;Return&lt;br&gt;Personalized Plan" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFE599;strokeColor=#d6b656;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="1180" y="840" width="140" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="b_userout" value="&lt;b&gt;E1&lt;/b&gt;&lt;br&gt;User&lt;br&gt;&lt;i&gt;(duplicate)&lt;/i&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="1400" y="850" width="150" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="b_d3" value="D3 | Financial Transactions" style="shape=datastore;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="490" y="1070" width="200" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="b_d4" value="D4 | Goals &amp; Financial Plans" style="shape=datastore;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="930" y="1070" width="200" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="fb1" value="Goals / Target Timeline" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;startArrow=none;strokeColor=#37474F;strokeWidth=1.4;fontSize=9;fontColor=#1F3864;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="b_user" target="b_41">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fb2" value="Goals &amp; Targets" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;startArrow=none;strokeColor=#37474F;strokeWidth=1.4;fontSize=9;fontColor=#1F3864;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="b_41" target="b_42">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fb3" value="Financial Transaction Data" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;startArrow=none;strokeColor=#37474F;strokeWidth=1.4;fontSize=9;fontColor=#1F3864;labelBackgroundColor=#FFFFFF;exitX=0.3;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="b_d3" target="b_42">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fb4" value="Financial Profile Analysis" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;startArrow=none;strokeColor=#37474F;strokeWidth=1.4;fontSize=9;fontColor=#1F3864;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="b_42" target="b_43">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fb5" value="Goals &amp; Financial Plan" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;startArrow=none;strokeColor=#37474F;strokeWidth=1.4;fontSize=9;fontColor=#1F3864;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="b_43" target="b_44">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fb6" value="Goals &amp; Financial Plan" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;startArrow=none;strokeColor=#37474F;strokeWidth=1.4;fontSize=9;fontColor=#1F3864;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="b_44" target="b_d4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fb7" value="Stored Plan" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;startArrow=none;strokeColor=#37474F;strokeWidth=1.4;fontSize=9;fontColor=#1F3864;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="b_44" target="b_45">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fb8" value="Personalized Financial Plan" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;startArrow=none;dashed=1;strokeColor=#78909C;strokeWidth=1.4;fontSize=9;fontColor=#37474F;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="b_45" target="b_userout">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="dfd-level2-b" name="DFD Level 2 (2.0 &amp; 3.0)">
+    <mxGraphModel dx="1400" dy="900" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1650" pageHeight="1240" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="b_title" value="DFD Level 2 – Decomposition of 2.0 Questionnaire &amp; Financial Assessment and 3.0 Income &amp; Expense Management" style="text;html=1;align=center;verticalAlign=middle;fontStyle=1;fontSize=20;fontColor=#1F3864;whiteSpace=wrap;" vertex="1" parent="1"><mxGeometry x="60" y="18" width="1500" height="40" as="geometry" /></mxCell>
+
+        <!-- ===== 2.0 DECOMPOSITION ===== -->
+        <mxCell id="p2_sec" value="Decomposition of Process 2.0 – Questionnaire &amp; Financial Assessment" style="text;html=1;align=left;fontStyle=1;fontSize=14;fontColor=#4527A0;" vertex="1" parent="1"><mxGeometry x="60" y="80" width="900" height="24" as="geometry" /></mxCell>
+        <mxCell id="p2_user" value="&lt;b&gt;E1&lt;/b&gt;&lt;br&gt;User" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=13;fontStyle=1;" vertex="1" parent="1"><mxGeometry x="60" y="230" width="150" height="100" as="geometry" /></mxCell>
+        <mxCell id="p2_21" value="&lt;b&gt;2.1&lt;/b&gt;&lt;br&gt;Receive&lt;br&gt;Questionnaire" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=11;" vertex="1" parent="1"><mxGeometry x="300" y="210" width="140" height="140" as="geometry" /></mxCell>
+        <mxCell id="p2_22" value="&lt;b&gt;2.2&lt;/b&gt;&lt;br&gt;Analyze Financial&lt;br&gt;Profile" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=11;" vertex="1" parent="1"><mxGeometry x="520" y="210" width="140" height="140" as="geometry" /></mxCell>
+        <mxCell id="p2_23" value="&lt;b&gt;2.3&lt;/b&gt;&lt;br&gt;Store Profile &amp;&lt;br&gt;Questionnaire" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=11;" vertex="1" parent="1"><mxGeometry x="740" y="210" width="140" height="140" as="geometry" /></mxCell>
+        <mxCell id="p2_24" value="&lt;b&gt;2.4&lt;/b&gt;&lt;br&gt;Generate &amp; Forward&lt;br&gt;Assessment" style="ellipse;whiteSpace=wrap;html=1;fillColor=#b0e3e6;strokeColor=#0e8088;fontSize=11;" vertex="1" parent="1"><mxGeometry x="960" y="210" width="140" height="140" as="geometry" /></mxCell>
+        <mxCell id="p2_ref4" value="&lt;b&gt;4.0&lt;/b&gt;&lt;br&gt;Goal &amp; Financial&lt;br&gt;Plan Management" style="ellipse;whiteSpace=wrap;html=1;fillColor=#F5F5F5;strokeColor=#9E9E9E;dashed=1;fontSize=11;" vertex="1" parent="1"><mxGeometry x="1360" y="230" width="150" height="100" as="geometry" /></mxCell>
+        <mxCell id="p2_d2" value="D2 | Questionnaire &amp; Profile Data" style="shape=datastore;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=11;" vertex="1" parent="1"><mxGeometry x="700" y="450" width="200" height="70" as="geometry" /></mxCell>
+        <mxCell id="p2_d4" value="D4 | Goals &amp; Financial Plans" style="shape=datastore;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=11;" vertex="1" parent="1"><mxGeometry x="960" y="450" width="200" height="70" as="geometry" /></mxCell>
+        <mxCell id="p2_f1" value="Questionnaire Responses" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;startArrow=none;strokeColor=#37474F;strokeWidth=1.4;fontSize=9;fontColor=#1F3864;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="p2_user" target="p2_21"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="p2_f2" value="Questionnaire Responses" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;startArrow=none;strokeColor=#37474F;strokeWidth=1.4;fontSize=9;fontColor=#1F3864;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="p2_21" target="p2_22"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="p2_f3" value="Profile &amp; Questionnaire Data" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;startArrow=none;strokeColor=#37474F;strokeWidth=1.4;fontSize=9;fontColor=#1F3864;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="p2_22" target="p2_23"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="p2_f4" value="Profile &amp; Questionnaire Data" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;startArrow=none;strokeColor=#37474F;strokeWidth=1.4;fontSize=9;fontColor=#1F3864;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="p2_23" target="p2_d2"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="p2_f5" value="Financial Assessment" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;startArrow=none;strokeColor=#37474F;strokeWidth=1.4;fontSize=9;fontColor=#1F3864;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="p2_23" target="p2_24"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="p2_f6" value="Financial Assessment" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;startArrow=none;strokeColor=#37474F;strokeWidth=1.4;fontSize=9;fontColor=#1F3864;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="p2_24" target="p2_d4"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="p2_f7" value="Financial Assessment Results" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;startArrow=none;strokeColor=#37474F;strokeWidth=1.4;fontSize=9;fontColor=#1F3864;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="p2_24" target="p2_ref4"><mxGeometry relative="1" as="geometry" /></mxCell>
+
+        <!-- ===== 3.0 DECOMPOSITION ===== -->
+        <mxCell id="p3_sec" value="Decomposition of Process 3.0 – Income &amp; Expense Management" style="text;html=1;align=left;fontStyle=1;fontSize=14;fontColor=#4527A0;" vertex="1" parent="1"><mxGeometry x="60" y="700" width="900" height="24" as="geometry" /></mxCell>
+        <mxCell id="p3_user" value="&lt;b&gt;E1&lt;/b&gt;&lt;br&gt;User" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=13;fontStyle=1;" vertex="1" parent="1"><mxGeometry x="60" y="840" width="150" height="100" as="geometry" /></mxCell>
+        <mxCell id="p3_31" value="&lt;b&gt;3.1&lt;/b&gt;&lt;br&gt;Receive Income /&lt;br&gt;Expense Details" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=11;" vertex="1" parent="1"><mxGeometry x="300" y="820" width="140" height="140" as="geometry" /></mxCell>
+        <mxCell id="p3_32" value="&lt;b&gt;3.2&lt;/b&gt;&lt;br&gt;Sync Bank&lt;br&gt;Transactions" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=11;" vertex="1" parent="1"><mxGeometry x="520" y="820" width="140" height="140" as="geometry" /></mxCell>
+        <mxCell id="p3_33" value="&lt;b&gt;3.3&lt;/b&gt;&lt;br&gt;Record Income&lt;br&gt;&amp; Expenses" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=11;" vertex="1" parent="1"><mxGeometry x="740" y="820" width="140" height="140" as="geometry" /></mxCell>
+        <mxCell id="p3_34" value="&lt;b&gt;3.4&lt;/b&gt;&lt;br&gt;Provide&lt;br&gt;Transaction Data" style="ellipse;whiteSpace=wrap;html=1;fillColor=#b0e3e6;strokeColor=#0e8088;fontSize=11;" vertex="1" parent="1"><mxGeometry x="960" y="820" width="140" height="140" as="geometry" /></mxCell>
+        <mxCell id="p3_e3" value="&lt;b&gt;E3&lt;/b&gt;&lt;br&gt;Bank / Payment APIs" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#b1ddf0;strokeColor=#10739e;fontSize=12;fontStyle=1;" vertex="1" parent="1"><mxGeometry x="470" y="1040" width="200" height="70" as="geometry" /></mxCell>
+        <mxCell id="p3_d3" value="D3 | Financial Transactions" style="shape=datastore;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=11;" vertex="1" parent="1"><mxGeometry x="740" y="1040" width="200" height="70" as="geometry" /></mxCell>
+        <mxCell id="p3_ref5" value="&lt;b&gt;5.0&lt;/b&gt;&lt;br&gt;Dashboard &amp;&lt;br&gt;Progress Tracking" style="ellipse;whiteSpace=wrap;html=1;fillColor=#F5F5F5;strokeColor=#9E9E9E;dashed=1;fontSize=11;" vertex="1" parent="1"><mxGeometry x="1360" y="790" width="160" height="90" as="geometry" /></mxCell>
+        <mxCell id="p3_ref9" value="&lt;b&gt;9.0&lt;/b&gt;&lt;br&gt;Reports &amp;&lt;br&gt;Financial Insights" style="ellipse;whiteSpace=wrap;html=1;fillColor=#F5F5F5;strokeColor=#9E9E9E;dashed=1;fontSize=11;" vertex="1" parent="1"><mxGeometry x="1360" y="910" width="160" height="90" as="geometry" /></mxCell>
+        <mxCell id="p3_f1" value="Income / Expense Details" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;startArrow=none;strokeColor=#37474F;strokeWidth=1.4;fontSize=9;fontColor=#1F3864;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="p3_user" target="p3_31"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="p3_f2" value="Income &amp; Expense Entries" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;startArrow=none;strokeColor=#37474F;strokeWidth=1.4;fontSize=9;fontColor=#1F3864;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="p3_31" target="p3_32"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="p3_f3" value="Transaction Sync Request" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;startArrow=none;strokeColor=#37474F;strokeWidth=1.4;fontSize=9;fontColor=#1F3864;labelBackgroundColor=#FFFFFF;exitX=0.35;exitY=1;entryX=0.4;entryY=0;" edge="1" parent="1" source="p3_32" target="p3_e3"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="p3_f4" value="Bank Transaction Data" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;startArrow=none;dashed=1;strokeColor=#78909C;strokeWidth=1.4;fontSize=9;fontColor=#37474F;labelBackgroundColor=#FFFFFF;exitX=0.6;exitY=0;entryX=0.6;entryY=1;" edge="1" parent="1" source="p3_e3" target="p3_32"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="p3_f5" value="Verified Transactions" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;startArrow=none;strokeColor=#37474F;strokeWidth=1.4;fontSize=9;fontColor=#1F3864;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="p3_32" target="p3_33"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="p3_f6" value="Income &amp; Expense Records" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;startArrow=none;strokeColor=#37474F;strokeWidth=1.4;fontSize=9;fontColor=#1F3864;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="p3_33" target="p3_d3"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="p3_f7" value="Consolidated Transactions" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;startArrow=none;strokeColor=#37474F;strokeWidth=1.4;fontSize=9;fontColor=#1F3864;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="p3_33" target="p3_34"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="p3_f8" value="Financial Transaction Data" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;startArrow=none;strokeColor=#37474F;strokeWidth=1.4;fontSize=9;fontColor=#1F3864;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.35;entryX=0;entryY=0.5;" edge="1" parent="1" source="p3_34" target="p3_ref5"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="p3_f9" value="Transaction History" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;startArrow=none;strokeColor=#37474F;strokeWidth=1.4;fontSize=9;fontColor=#1F3864;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.7;entryX=0;entryY=0.5;" edge="1" parent="1" source="p3_34" target="p3_ref9"><mxGeometry relative="1" as="geometry" /></mxCell>
+
+        <mxCell id="p23_legend" value="Legend:  E = External Entity      numbered circle = Sub-process      D = Data Store      solid arrow = forward / input flow      dashed arrow = return / output flow      grey dashed circle = related Level-1 process" style="rounded=1;whiteSpace=wrap;html=1;dashed=1;dashPattern=6 4;fillColor=#FFFFFF;strokeColor=#666666;fontSize=11;align=left;spacingLeft=8;verticalAlign=middle;" vertex="1" parent="1"><mxGeometry x="60" y="1150" width="1000" height="60" as="geometry" /></mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+
+  <diagram id="dfd-level2-c" name="DFD Level 2 (5.0 &amp; 6.0)">
+    <mxGraphModel dx="1400" dy="900" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1650" pageHeight="1240" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="c_title" value="DFD Level 2 – Decomposition of 5.0 Dashboard &amp; Progress Tracking and 6.0 Bills &amp; Reminder Management" style="text;html=1;align=center;verticalAlign=middle;fontStyle=1;fontSize=20;fontColor=#1F3864;whiteSpace=wrap;" vertex="1" parent="1"><mxGeometry x="60" y="18" width="1500" height="40" as="geometry" /></mxCell>
+
+        <!-- ===== 5.0 DECOMPOSITION ===== -->
+        <mxCell id="p5_sec" value="Decomposition of Process 5.0 – Dashboard &amp; Progress Tracking" style="text;html=1;align=left;fontStyle=1;fontSize=14;fontColor=#4527A0;" vertex="1" parent="1"><mxGeometry x="60" y="80" width="900" height="24" as="geometry" /></mxCell>
+        <mxCell id="p5_ref3" value="&lt;b&gt;3.0&lt;/b&gt;  Income &amp; Expense" style="ellipse;whiteSpace=wrap;html=1;fillColor=#F5F5F5;strokeColor=#9E9E9E;dashed=1;fontSize=10;" vertex="1" parent="1"><mxGeometry x="60" y="150" width="160" height="52" as="geometry" /></mxCell>
+        <mxCell id="p5_d3" value="D3 | Financial Transactions" style="shape=datastore;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=10;" vertex="1" parent="1"><mxGeometry x="60" y="212" width="190" height="52" as="geometry" /></mxCell>
+        <mxCell id="p5_d4" value="D4 | Goals &amp; Financial Plans" style="shape=datastore;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=10;" vertex="1" parent="1"><mxGeometry x="60" y="272" width="190" height="52" as="geometry" /></mxCell>
+        <mxCell id="p5_d6" value="D6 | Progress &amp; Streaks" style="shape=datastore;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=10;" vertex="1" parent="1"><mxGeometry x="60" y="332" width="190" height="52" as="geometry" /></mxCell>
+        <mxCell id="p5_ref4" value="&lt;b&gt;4.0&lt;/b&gt;  Goal &amp; Plan" style="ellipse;whiteSpace=wrap;html=1;fillColor=#F5F5F5;strokeColor=#9E9E9E;dashed=1;fontSize=10;" vertex="1" parent="1"><mxGeometry x="60" y="394" width="160" height="52" as="geometry" /></mxCell>
+        <mxCell id="p5_51" value="&lt;b&gt;5.1&lt;/b&gt;&lt;br&gt;Fetch Financial&lt;br&gt;&amp; Goal Data" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=11;" vertex="1" parent="1"><mxGeometry x="330" y="228" width="130" height="130" as="geometry" /></mxCell>
+        <mxCell id="p5_52" value="&lt;b&gt;5.2&lt;/b&gt;&lt;br&gt;Compute Progress&lt;br&gt;&amp; Streaks" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=11;" vertex="1" parent="1"><mxGeometry x="540" y="228" width="130" height="130" as="geometry" /></mxCell>
+        <mxCell id="p5_54" value="&lt;b&gt;5.4&lt;/b&gt;&lt;br&gt;Render&lt;br&gt;Dashboard" style="ellipse;whiteSpace=wrap;html=1;fillColor=#b0e3e6;strokeColor=#0e8088;fontSize=11;" vertex="1" parent="1"><mxGeometry x="770" y="120" width="130" height="130" as="geometry" /></mxCell>
+        <mxCell id="p5_55" value="&lt;b&gt;5.5&lt;/b&gt;&lt;br&gt;Forward&lt;br&gt;Milestone Data" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFE599;strokeColor=#d6b656;fontSize=11;" vertex="1" parent="1"><mxGeometry x="770" y="330" width="130" height="130" as="geometry" /></mxCell>
+        <mxCell id="p5_53" value="&lt;b&gt;5.3&lt;/b&gt;&lt;br&gt;Update&lt;br&gt;Progress Store" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=11;" vertex="1" parent="1"><mxGeometry x="540" y="410" width="130" height="130" as="geometry" /></mxCell>
+        <mxCell id="p5_d6w" value="D6 | Progress &amp; Streaks&lt;br&gt;&lt;i&gt;(update)&lt;/i&gt;" style="shape=datastore;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=10;" vertex="1" parent="1"><mxGeometry x="330" y="470" width="190" height="60" as="geometry" /></mxCell>
+        <mxCell id="p5_userout" value="&lt;b&gt;E1&lt;/b&gt;&lt;br&gt;User&lt;br&gt;&lt;i&gt;(duplicate)&lt;/i&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;fontStyle=1;" vertex="1" parent="1"><mxGeometry x="1120" y="130" width="150" height="100" as="geometry" /></mxCell>
+        <mxCell id="p5_ref8" value="&lt;b&gt;8.0&lt;/b&gt;&lt;br&gt;Rewards &amp;&lt;br&gt;Achievement Mgmt" style="ellipse;whiteSpace=wrap;html=1;fillColor=#F5F5F5;strokeColor=#9E9E9E;dashed=1;fontSize=11;" vertex="1" parent="1"><mxGeometry x="1120" y="345" width="160" height="100" as="geometry" /></mxCell>
+        <mxCell id="p5_f1" value="Income &amp; Expense Data" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;startArrow=none;strokeColor=#37474F;strokeWidth=1.4;fontSize=9;fontColor=#1F3864;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;entryX=0;entryY=0.4;" edge="1" parent="1" source="p5_d3" target="p5_51"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="p5_f2" value="Goal &amp; Target Data" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;startArrow=none;strokeColor=#37474F;strokeWidth=1.4;fontSize=9;fontColor=#1F3864;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;entryX=0;entryY=0.6;" edge="1" parent="1" source="p5_d4" target="p5_51"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="p5_f3" value="Financial Transaction Data" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;startArrow=none;strokeColor=#37474F;strokeWidth=1.4;fontSize=9;fontColor=#1F3864;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;entryX=0;entryY=0.15;" edge="1" parent="1" source="p5_ref3" target="p5_51"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="p5_f4" value="Goal Targets &amp; Plan" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;startArrow=none;strokeColor=#37474F;strokeWidth=1.4;fontSize=9;fontColor=#1F3864;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;entryX=0;entryY=0.85;" edge="1" parent="1" source="p5_ref4" target="p5_51"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="p5_f5" value="Progress &amp; Streak Data" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;startArrow=none;strokeColor=#37474F;strokeWidth=1.4;fontSize=9;fontColor=#1F3864;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;entryX=0.5;entryY=1;" edge="1" parent="1" source="p5_d6" target="p5_52"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="p5_f6" value="Aggregated Data" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;startArrow=none;strokeColor=#37474F;strokeWidth=1.4;fontSize=9;fontColor=#1F3864;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="p5_51" target="p5_52"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="p5_f7" value="Progress &amp; Achievements" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;startArrow=none;strokeColor=#37474F;strokeWidth=1.4;fontSize=9;fontColor=#1F3864;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.3;entryX=0;entryY=0.7;" edge="1" parent="1" source="p5_52" target="p5_54"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="p5_f8" value="Dashboard / Progress / Achievements" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;startArrow=none;dashed=1;strokeColor=#78909C;strokeWidth=1.4;fontSize=9;fontColor=#37474F;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="p5_54" target="p5_userout"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="p5_f9" value="Milestone / Progress Data" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;startArrow=none;strokeColor=#37474F;strokeWidth=1.4;fontSize=9;fontColor=#1F3864;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.7;entryX=0;entryY=0.3;" edge="1" parent="1" source="p5_52" target="p5_55"><mxGeometry relative="1" as="geometry"><Array as="points"><mxPoint x="720" y="395" /></Array></mxGeometry></mxCell>
+        <mxCell id="p5_f10" value="Milestone / Progress Data" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;startArrow=none;strokeColor=#37474F;strokeWidth=1.4;fontSize=9;fontColor=#1F3864;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="p5_55" target="p5_ref8"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="p5_f11" value="Updated Progress / Savings / Streaks" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;startArrow=none;strokeColor=#37474F;strokeWidth=1.4;fontSize=9;fontColor=#1F3864;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="p5_52" target="p5_53"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="p5_f12" value="Updated Progress / Savings / Streaks" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;startArrow=none;strokeColor=#37474F;strokeWidth=1.4;fontSize=9;fontColor=#1F3864;labelBackgroundColor=#FFFFFF;exitX=0.4;exitY=1;entryX=0.7;entryY=0;" edge="1" parent="1" source="p5_53" target="p5_d6w"><mxGeometry relative="1" as="geometry" /></mxCell>
+
+        <!-- ===== 6.0 DECOMPOSITION ===== -->
+        <mxCell id="p6_sec" value="Decomposition of Process 6.0 – Bills &amp; Reminder Management" style="text;html=1;align=left;fontStyle=1;fontSize=14;fontColor=#4527A0;" vertex="1" parent="1"><mxGeometry x="60" y="700" width="900" height="24" as="geometry" /></mxCell>
+        <mxCell id="p6_user" value="&lt;b&gt;E1&lt;/b&gt;&lt;br&gt;User" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=13;fontStyle=1;" vertex="1" parent="1"><mxGeometry x="60" y="840" width="150" height="100" as="geometry" /></mxCell>
+        <mxCell id="p6_61" value="&lt;b&gt;6.1&lt;/b&gt;&lt;br&gt;Receive Bill Info&lt;br&gt;/ Preferences" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=11;" vertex="1" parent="1"><mxGeometry x="300" y="820" width="140" height="140" as="geometry" /></mxCell>
+        <mxCell id="p6_62" value="&lt;b&gt;6.2&lt;/b&gt;&lt;br&gt;Store Bills&lt;br&gt;&amp; Reminders" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=11;" vertex="1" parent="1"><mxGeometry x="520" y="820" width="140" height="140" as="geometry" /></mxCell>
+        <mxCell id="p6_63" value="&lt;b&gt;6.3&lt;/b&gt;&lt;br&gt;Schedule&lt;br&gt;Reminder" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=11;" vertex="1" parent="1"><mxGeometry x="740" y="820" width="140" height="140" as="geometry" /></mxCell>
+        <mxCell id="p6_64" value="&lt;b&gt;6.4&lt;/b&gt;&lt;br&gt;Deliver&lt;br&gt;Reminder" style="ellipse;whiteSpace=wrap;html=1;fillColor=#b0e3e6;strokeColor=#0e8088;fontSize=11;" vertex="1" parent="1"><mxGeometry x="960" y="820" width="140" height="140" as="geometry" /></mxCell>
+        <mxCell id="p6_e4" value="&lt;b&gt;E4&lt;/b&gt;&lt;br&gt;Reminder / Notification Service" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=12;fontStyle=1;" vertex="1" parent="1"><mxGeometry x="740" y="1040" width="220" height="70" as="geometry" /></mxCell>
+        <mxCell id="p6_d5" value="D5 | Bills &amp; Reminders" style="shape=datastore;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=11;" vertex="1" parent="1"><mxGeometry x="470" y="1040" width="200" height="70" as="geometry" /></mxCell>
+        <mxCell id="p6_userout" value="&lt;b&gt;E1&lt;/b&gt;&lt;br&gt;User&lt;br&gt;&lt;i&gt;(duplicate)&lt;/i&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;fontStyle=1;" vertex="1" parent="1"><mxGeometry x="1200" y="840" width="150" height="100" as="geometry" /></mxCell>
+        <mxCell id="p6_f1" value="Bill Information / Reminder Preferences" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;startArrow=none;strokeColor=#37474F;strokeWidth=1.4;fontSize=9;fontColor=#1F3864;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="p6_user" target="p6_61"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="p6_f2" value="Bill &amp; Reminder Records" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;startArrow=none;strokeColor=#37474F;strokeWidth=1.4;fontSize=9;fontColor=#1F3864;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="p6_61" target="p6_62"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="p6_f3" value="Bill &amp; Reminder Records" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;startArrow=none;strokeColor=#37474F;strokeWidth=1.4;fontSize=9;fontColor=#1F3864;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="p6_62" target="p6_d5"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="p6_f4" value="Reminder Schedule" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;startArrow=none;strokeColor=#37474F;strokeWidth=1.4;fontSize=9;fontColor=#1F3864;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="p6_62" target="p6_63"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="p6_f5" value="Reminder Request" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;startArrow=none;strokeColor=#37474F;strokeWidth=1.4;fontSize=9;fontColor=#1F3864;labelBackgroundColor=#FFFFFF;exitX=0.3;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="p6_63" target="p6_e4"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="p6_f6" value="Notification Status" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;startArrow=none;dashed=1;strokeColor=#78909C;strokeWidth=1.4;fontSize=9;fontColor=#37474F;labelBackgroundColor=#FFFFFF;exitX=0.85;exitY=0;entryX=0.5;entryY=1;" edge="1" parent="1" source="p6_e4" target="p6_64"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="p6_f7" value="Bill / Goal Reminder" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;startArrow=none;dashed=1;strokeColor=#78909C;strokeWidth=1.4;fontSize=9;fontColor=#37474F;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="p6_64" target="p6_userout"><mxGeometry relative="1" as="geometry" /></mxCell>
+
+        <mxCell id="p56_legend" value="Legend:  E = External Entity      numbered circle = Sub-process      D = Data Store      solid arrow = forward / input flow      dashed arrow = return / output flow      grey dashed circle = related Level-1 process" style="rounded=1;whiteSpace=wrap;html=1;dashed=1;dashPattern=6 4;fillColor=#FFFFFF;strokeColor=#666666;fontSize=11;align=left;spacingLeft=8;verticalAlign=middle;" vertex="1" parent="1"><mxGeometry x="60" y="1150" width="1000" height="60" as="geometry" /></mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+
+  <diagram id="dfd-level2-d" name="DFD Level 2 (7.0 &amp; 8.0)">
+    <mxGraphModel dx="1400" dy="900" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1700" pageHeight="1260" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="d_title" value="DFD Level 2 – Decomposition of 7.0 Side-Hustle Recommendation and 8.0 Rewards &amp; Achievement Management" style="text;html=1;align=center;verticalAlign=middle;fontStyle=1;fontSize=20;fontColor=#1F3864;whiteSpace=wrap;" vertex="1" parent="1"><mxGeometry x="60" y="18" width="1560" height="40" as="geometry" /></mxCell>
+
+        <!-- ===== 7.0 DECOMPOSITION ===== -->
+        <mxCell id="p7_sec" value="Decomposition of Process 7.0 – Side-Hustle Recommendation" style="text;html=1;align=left;fontStyle=1;fontSize=14;fontColor=#4527A0;" vertex="1" parent="1"><mxGeometry x="60" y="80" width="900" height="24" as="geometry" /></mxCell>
+        <mxCell id="p7_d2" value="D2 | Questionnaire &amp; Profile Data" style="shape=datastore;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=10;" vertex="1" parent="1"><mxGeometry x="60" y="210" width="200" height="55" as="geometry" /></mxCell>
+        <mxCell id="p7_d3" value="D3 | Financial Transactions" style="shape=datastore;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=10;" vertex="1" parent="1"><mxGeometry x="60" y="290" width="200" height="55" as="geometry" /></mxCell>
+        <mxCell id="p7_71" value="&lt;b&gt;7.1&lt;/b&gt;&lt;br&gt;Gather Profile &amp;&lt;br&gt;Financial Data" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=11;" vertex="1" parent="1"><mxGeometry x="340" y="210" width="140" height="140" as="geometry" /></mxCell>
+        <mxCell id="p7_72" value="&lt;b&gt;7.2&lt;/b&gt;&lt;br&gt;Request&lt;br&gt;Opportunities" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=11;" vertex="1" parent="1"><mxGeometry x="560" y="210" width="140" height="140" as="geometry" /></mxCell>
+        <mxCell id="p7_73" value="&lt;b&gt;7.3&lt;/b&gt;&lt;br&gt;Match &amp; Rank&lt;br&gt;Opportunities" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=11;" vertex="1" parent="1"><mxGeometry x="780" y="210" width="140" height="140" as="geometry" /></mxCell>
+        <mxCell id="p7_74" value="&lt;b&gt;7.4&lt;/b&gt;&lt;br&gt;Deliver&lt;br&gt;Suggestions" style="ellipse;whiteSpace=wrap;html=1;fillColor=#b0e3e6;strokeColor=#0e8088;fontSize=11;" vertex="1" parent="1"><mxGeometry x="1000" y="210" width="140" height="140" as="geometry" /></mxCell>
+        <mxCell id="p7_e5" value="&lt;b&gt;E5&lt;/b&gt;&lt;br&gt;Side-Hustle Platforms" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;fontStyle=1;" vertex="1" parent="1"><mxGeometry x="620" y="70" width="220" height="70" as="geometry" /></mxCell>
+        <mxCell id="p7_userout" value="&lt;b&gt;E1&lt;/b&gt;&lt;br&gt;User&lt;br&gt;&lt;i&gt;(duplicate)&lt;/i&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;fontStyle=1;" vertex="1" parent="1"><mxGeometry x="1240" y="220" width="150" height="100" as="geometry" /></mxCell>
+        <mxCell id="p7_f1" value="User Skills / Interests / Preferences" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;startArrow=none;strokeColor=#37474F;strokeWidth=1.4;fontSize=9;fontColor=#1F3864;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;entryX=0;entryY=0.35;" edge="1" parent="1" source="p7_d2" target="p7_71"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="p7_f2" value="Financial Profile" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;startArrow=none;strokeColor=#37474F;strokeWidth=1.4;fontSize=9;fontColor=#1F3864;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;entryX=0;entryY=0.65;" edge="1" parent="1" source="p7_d3" target="p7_71"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="p7_f3" value="Search Criteria" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;startArrow=none;strokeColor=#37474F;strokeWidth=1.4;fontSize=9;fontColor=#1F3864;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="p7_71" target="p7_72"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="p7_f4" value="Opportunity Request" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;startArrow=none;strokeColor=#37474F;strokeWidth=1.4;fontSize=9;fontColor=#1F3864;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=0;entryX=0.35;entryY=1;" edge="1" parent="1" source="p7_72" target="p7_e5"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="p7_f5" value="Side-Hustle Opportunities" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;startArrow=none;dashed=1;strokeColor=#78909C;strokeWidth=1.4;fontSize=9;fontColor=#37474F;labelBackgroundColor=#FFFFFF;exitX=0.7;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="p7_e5" target="p7_73"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="p7_f6" value="User Preferences" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;startArrow=none;strokeColor=#37474F;strokeWidth=1.4;fontSize=9;fontColor=#1F3864;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;entryX=0.5;entryY=1;" edge="1" parent="1" source="p7_71" target="p7_73"><mxGeometry relative="1" as="geometry"><Array as="points"><mxPoint x="410" y="410" /><mxPoint x="850" y="410" /></Array></mxGeometry></mxCell>
+        <mxCell id="p7_f7" value="Ranked Opportunities" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;startArrow=none;strokeColor=#37474F;strokeWidth=1.4;fontSize=9;fontColor=#1F3864;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="p7_73" target="p7_74"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="p7_f8" value="Personalized Side-Hustle Suggestions" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;startArrow=none;dashed=1;strokeColor=#78909C;strokeWidth=1.4;fontSize=9;fontColor=#37474F;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="p7_74" target="p7_userout"><mxGeometry relative="1" as="geometry" /></mxCell>
+
+        <!-- ===== 8.0 DECOMPOSITION ===== -->
+        <mxCell id="p8_sec" value="Decomposition of Process 8.0 – Rewards &amp; Achievement Management" style="text;html=1;align=left;fontStyle=1;fontSize=14;fontColor=#4527A0;" vertex="1" parent="1"><mxGeometry x="60" y="640" width="900" height="24" as="geometry" /></mxCell>
+        <mxCell id="p8_ref5" value="&lt;b&gt;5.0&lt;/b&gt;  Dashboard &amp; Progress" style="ellipse;whiteSpace=wrap;html=1;fillColor=#F5F5F5;strokeColor=#9E9E9E;dashed=1;fontSize=10;" vertex="1" parent="1"><mxGeometry x="60" y="720" width="170" height="55" as="geometry" /></mxCell>
+        <mxCell id="p8_user" value="&lt;b&gt;E1&lt;/b&gt;&lt;br&gt;User" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=13;fontStyle=1;" vertex="1" parent="1"><mxGeometry x="60" y="810" width="150" height="90" as="geometry" /></mxCell>
+        <mxCell id="p8_81" value="&lt;b&gt;8.1&lt;/b&gt;&lt;br&gt;Receive Milestone&lt;br&gt;/ Redemption" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=11;" vertex="1" parent="1"><mxGeometry x="300" y="760" width="130" height="130" as="geometry" /></mxCell>
+        <mxCell id="p8_82" value="&lt;b&gt;8.2&lt;/b&gt;&lt;br&gt;Check Reward&lt;br&gt;Eligibility" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=11;" vertex="1" parent="1"><mxGeometry x="520" y="760" width="130" height="130" as="geometry" /></mxCell>
+        <mxCell id="p8_83" value="&lt;b&gt;8.3&lt;/b&gt;&lt;br&gt;Generate / Retrieve&lt;br&gt;Reward" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=11;" vertex="1" parent="1"><mxGeometry x="740" y="760" width="130" height="130" as="geometry" /></mxCell>
+        <mxCell id="p8_84" value="&lt;b&gt;8.4&lt;/b&gt;&lt;br&gt;Store Reward&lt;br&gt;&amp; Milestone" style="ellipse;whiteSpace=wrap;html=1;fillColor=#b0e3e6;strokeColor=#0e8088;fontSize=11;" vertex="1" parent="1"><mxGeometry x="960" y="760" width="130" height="130" as="geometry" /></mxCell>
+        <mxCell id="p8_85" value="&lt;b&gt;8.5&lt;/b&gt;&lt;br&gt;Deliver Reward&lt;br&gt;&amp; Notify" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFE599;strokeColor=#d6b656;fontSize=11;" vertex="1" parent="1"><mxGeometry x="1180" y="760" width="130" height="130" as="geometry" /></mxCell>
+        <mxCell id="p8_e6" value="&lt;b&gt;E6&lt;/b&gt;&lt;br&gt;Reward / Coupon Provider" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFE599;strokeColor=#d6b656;fontSize=12;fontStyle=1;" vertex="1" parent="1"><mxGeometry x="660" y="960" width="200" height="70" as="geometry" /></mxCell>
+        <mxCell id="p8_d6" value="D6 | Progress &amp; Streaks" style="shape=datastore;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=10;" vertex="1" parent="1"><mxGeometry x="430" y="960" width="190" height="60" as="geometry" /></mxCell>
+        <mxCell id="p8_d7" value="D7 | Rewards &amp; Coupons" style="shape=datastore;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=10;" vertex="1" parent="1"><mxGeometry x="900" y="960" width="190" height="60" as="geometry" /></mxCell>
+        <mxCell id="p8_userout" value="&lt;b&gt;E1&lt;/b&gt;&lt;br&gt;User&lt;br&gt;&lt;i&gt;(duplicate)&lt;/i&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;fontStyle=1;" vertex="1" parent="1"><mxGeometry x="1420" y="740" width="150" height="90" as="geometry" /></mxCell>
+        <mxCell id="p8_e4" value="&lt;b&gt;E4&lt;/b&gt;&lt;br&gt;Reminder / Notification Service" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=11;fontStyle=1;" vertex="1" parent="1"><mxGeometry x="1420" y="880" width="190" height="80" as="geometry" /></mxCell>
+        <mxCell id="p8_f1" value="Milestone / Progress Data" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;startArrow=none;strokeColor=#37474F;strokeWidth=1.4;fontSize=9;fontColor=#1F3864;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;entryX=0;entryY=0.3;" edge="1" parent="1" source="p8_ref5" target="p8_81"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="p8_f2" value="Reward Redemption Request" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;startArrow=none;strokeColor=#37474F;strokeWidth=1.4;fontSize=9;fontColor=#1F3864;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;entryX=0;entryY=0.7;" edge="1" parent="1" source="p8_user" target="p8_81"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="p8_f3" value="Milestone / Redemption Data" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;startArrow=none;strokeColor=#37474F;strokeWidth=1.4;fontSize=9;fontColor=#1F3864;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="p8_81" target="p8_82"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="p8_f4" value="Milestone Status" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;startArrow=none;strokeColor=#37474F;strokeWidth=1.4;fontSize=9;fontColor=#1F3864;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="p8_82" target="p8_d6"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="p8_f5" value="Eligibility Result" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;startArrow=none;strokeColor=#37474F;strokeWidth=1.4;fontSize=9;fontColor=#1F3864;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="p8_82" target="p8_83"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="p8_f6" value="Reward / Coupon Request" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;startArrow=none;strokeColor=#37474F;strokeWidth=1.4;fontSize=9;fontColor=#1F3864;labelBackgroundColor=#FFFFFF;exitX=0.3;exitY=1;entryX=0.6;entryY=0;" edge="1" parent="1" source="p8_83" target="p8_e6"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="p8_f7" value="Reward / Coupon Data" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;startArrow=none;dashed=1;strokeColor=#78909C;strokeWidth=1.4;fontSize=9;fontColor=#37474F;labelBackgroundColor=#FFFFFF;exitX=0.6;exitY=0;entryX=0.5;entryY=1;" edge="1" parent="1" source="p8_e6" target="p8_83"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="p8_f8" value="Reward Data" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;startArrow=none;strokeColor=#37474F;strokeWidth=1.4;fontSize=9;fontColor=#1F3864;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="p8_83" target="p8_84"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="p8_f9" value="Reward Records" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;startArrow=none;strokeColor=#37474F;strokeWidth=1.4;fontSize=9;fontColor=#1F3864;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="p8_84" target="p8_d7"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="p8_f10" value="Reward / Coupon" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;startArrow=none;strokeColor=#37474F;strokeWidth=1.4;fontSize=9;fontColor=#1F3864;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="p8_84" target="p8_85"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="p8_f11" value="Reward / Coupon" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;startArrow=none;dashed=1;strokeColor=#78909C;strokeWidth=1.4;fontSize=9;fontColor=#37474F;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.3;entryX=0;entryY=0.5;" edge="1" parent="1" source="p8_85" target="p8_userout"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="p8_f12" value="Reward Notification" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;startArrow=none;strokeColor=#37474F;strokeWidth=1.4;fontSize=9;fontColor=#1F3864;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.7;entryX=0;entryY=0.5;" edge="1" parent="1" source="p8_85" target="p8_e4"><mxGeometry relative="1" as="geometry" /></mxCell>
+
+        <mxCell id="p78_legend" value="Legend:  E = External Entity      numbered circle = Sub-process      D = Data Store      solid arrow = forward / input flow      dashed arrow = return / output flow      grey dashed circle = related Level-1 process" style="rounded=1;whiteSpace=wrap;html=1;dashed=1;dashPattern=6 4;fillColor=#FFFFFF;strokeColor=#666666;fontSize=11;align=left;spacingLeft=8;verticalAlign=middle;" vertex="1" parent="1"><mxGeometry x="60" y="1070" width="1000" height="60" as="geometry" /></mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+
+  <diagram id="dfd-level2-e" name="DFD Level 2 (9.0)">
+    <mxGraphModel dx="1400" dy="900" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1400" pageHeight="720" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="e_title" value="DFD Level 2 – Decomposition of 9.0 Reports &amp; Financial Insights" style="text;html=1;align=center;verticalAlign=middle;fontStyle=1;fontSize=20;fontColor=#1F3864;whiteSpace=wrap;" vertex="1" parent="1"><mxGeometry x="60" y="18" width="1280" height="40" as="geometry" /></mxCell>
+        <mxCell id="p9_sec" value="Decomposition of Process 9.0 – Reports &amp; Financial Insights" style="text;html=1;align=left;fontStyle=1;fontSize=14;fontColor=#4527A0;" vertex="1" parent="1"><mxGeometry x="60" y="80" width="900" height="24" as="geometry" /></mxCell>
+        <mxCell id="p9_d3" value="D3 | Financial Transactions" style="shape=datastore;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=10;" vertex="1" parent="1"><mxGeometry x="60" y="180" width="200" height="55" as="geometry" /></mxCell>
+        <mxCell id="p9_d4" value="D4 | Goals &amp; Financial Plans" style="shape=datastore;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=10;" vertex="1" parent="1"><mxGeometry x="60" y="260" width="200" height="55" as="geometry" /></mxCell>
+        <mxCell id="p9_d6" value="D6 | Progress &amp; Streaks" style="shape=datastore;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=10;" vertex="1" parent="1"><mxGeometry x="60" y="380" width="200" height="55" as="geometry" /></mxCell>
+        <mxCell id="p9_91" value="&lt;b&gt;9.1&lt;/b&gt;&lt;br&gt;Collect Transaction&lt;br&gt;&amp; Goal Data" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=11;" vertex="1" parent="1"><mxGeometry x="350" y="170" width="140" height="140" as="geometry" /></mxCell>
+        <mxCell id="p9_92" value="&lt;b&gt;9.2&lt;/b&gt;&lt;br&gt;Collect&lt;br&gt;Progress Data" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=11;" vertex="1" parent="1"><mxGeometry x="350" y="350" width="140" height="140" as="geometry" /></mxCell>
+        <mxCell id="p9_93" value="&lt;b&gt;9.3&lt;/b&gt;&lt;br&gt;Analyze &amp; Generate&lt;br&gt;Insights" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=11;" vertex="1" parent="1"><mxGeometry x="600" y="260" width="140" height="140" as="geometry" /></mxCell>
+        <mxCell id="p9_94" value="&lt;b&gt;9.4&lt;/b&gt;&lt;br&gt;Deliver&lt;br&gt;Reports" style="ellipse;whiteSpace=wrap;html=1;fillColor=#b0e3e6;strokeColor=#0e8088;fontSize=11;" vertex="1" parent="1"><mxGeometry x="850" y="260" width="140" height="140" as="geometry" /></mxCell>
+        <mxCell id="p9_userout" value="&lt;b&gt;E1&lt;/b&gt;&lt;br&gt;User&lt;br&gt;&lt;i&gt;(duplicate)&lt;/i&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;fontStyle=1;" vertex="1" parent="1"><mxGeometry x="1120" y="280" width="150" height="100" as="geometry" /></mxCell>
+        <mxCell id="p9_f1" value="Transaction History" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;startArrow=none;strokeColor=#37474F;strokeWidth=1.4;fontSize=9;fontColor=#1F3864;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;entryX=0;entryY=0.4;" edge="1" parent="1" source="p9_d3" target="p9_91"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="p9_f2" value="Financial Goals &amp; Plan" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;startArrow=none;strokeColor=#37474F;strokeWidth=1.4;fontSize=9;fontColor=#1F3864;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;entryX=0;entryY=0.7;" edge="1" parent="1" source="p9_d4" target="p9_91"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="p9_f3" value="Progress Data" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;startArrow=none;strokeColor=#37474F;strokeWidth=1.4;fontSize=9;fontColor=#1F3864;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="p9_d6" target="p9_92"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="p9_f4" value="Financial Data" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;startArrow=none;strokeColor=#37474F;strokeWidth=1.4;fontSize=9;fontColor=#1F3864;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;entryX=0;entryY=0.3;" edge="1" parent="1" source="p9_91" target="p9_93"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="p9_f5" value="Progress Data" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;startArrow=none;strokeColor=#37474F;strokeWidth=1.4;fontSize=9;fontColor=#1F3864;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;entryX=0;entryY=0.7;" edge="1" parent="1" source="p9_92" target="p9_93"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="p9_f6" value="Reports / Insights" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;startArrow=none;strokeColor=#37474F;strokeWidth=1.4;fontSize=9;fontColor=#1F3864;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="p9_93" target="p9_94"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="p9_f7" value="Reports / Financial Insights" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;startArrow=none;dashed=1;strokeColor=#78909C;strokeWidth=1.4;fontSize=9;fontColor=#37474F;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="p9_94" target="p9_userout"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="p9_legend" value="Legend:  E = External Entity      numbered circle = Sub-process      D = Data Store      solid arrow = forward / input flow      dashed arrow = return / output flow" style="rounded=1;whiteSpace=wrap;html=1;dashed=1;dashPattern=6 4;fillColor=#FFFFFF;strokeColor=#666666;fontSize=11;align=left;spacingLeft=8;verticalAlign=middle;" vertex="1" parent="1"><mxGeometry x="60" y="560" width="920" height="40" as="geometry" /></mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

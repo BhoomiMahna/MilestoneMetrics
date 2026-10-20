@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { authFetch, inr } from '../api'
 
 function Chip({ active, onClick, children }) {
   return (
@@ -25,16 +26,17 @@ function Field({ label, children }) {
   )
 }
 
-function Questionnaire() {
-  const [submitted, setSubmitted] = useState(false)
+function Questionnaire({ onDone, existingPlan }) {
   const [data, setData] = useState({
-    income: '',
-    monthlySpend: '',
-    investments: '',
-    age: '',
-    goalAmount: '',
-    timelineYears: '',
+    income: existingPlan?.monthlyIncome ?? '',
+    monthlySpend: existingPlan?.monthlySpend ?? '',
+    investments: existingPlan?.currentInvestments ?? '',
+    age: existingPlan?.ageBand ?? '',
+    goalAmount: existingPlan?.goalAmount ?? '',
+    timelineYears: existingPlan?.timelineYears ?? '',
   })
+  const [loading, setLoading] = useState(false)
+  const [error, setError] = useState('')
 
   const set = (key, value) => setData((d) => ({ ...d, [key]: value }))
 
@@ -46,6 +48,29 @@ function Questionnaire() {
   const months = Math.max(Math.round(years * 12), 1)
   const monthly = data.goalAmount ? Math.ceil(Number(data.goalAmount) / months) : 0
 
+  async function buildPlan() {
+    setError('')
+    setLoading(true)
+    try {
+      const plan = await authFetch('/api/plan', {
+        method: 'POST',
+        body: JSON.stringify({
+          monthlyIncome: Number(data.income),
+          monthlySpend: Number(data.monthlySpend),
+          currentInvestments: Number(data.investments),
+          ageBand: data.age,
+          goalAmount: Number(data.goalAmount),
+          timelineYears: Number(data.timelineYears),
+        }),
+      })
+      onDone(plan)
+    } catch (e) {
+      setError(e.message || 'Could not save your plan. Is the backend running?')
+    } finally {
+      setLoading(false)
+    }
+  }
+
   return (
     <div className="h-screen w-screen bg-[#F4EBDD] text-[#171513] p-4 flex flex-col">
       <div className="w-full h-full flex flex-col">
@@ -54,6 +79,12 @@ function Questionnaire() {
 
             <h2 className="text-3xl font-black mb-2">Let's figure out your money situation.</h2>
             <p className="text-sm opacity-70 mb-8">Takes a couple minutes. Be as accurate as you can. No right or wrong answers here!</p>
+
+            {error && (
+              <div className="mb-6 px-4 py-3 rounded-xl bg-red-50 border border-red-200 text-red-700 text-sm">
+                {error}
+              </div>
+            )}
 
             <Field label="Monthly salary">
               <input type="number" placeholder="₹" value={data.income} onChange={(e) => set('income', e.target.value)} className={inputClass} />
@@ -83,26 +114,24 @@ function Questionnaire() {
               <input type="number" step="0.1" placeholder="e.g. 1.5" value={data.timelineYears} onChange={(e) => set('timelineYears', e.target.value)} className={inputClass} />
             </Field>
 
-            {!submitted && (
-              <button
-                onClick={() => setSubmitted(true)}
-                disabled={!allFilled}
-                className="w-full bg-[#171513] text-white py-4 rounded-xl font-bold hover:bg-[#E8893A] hover:text-[#171513] transition disabled:opacity-30 mt-4"
-              >
-                Build my plan →
-              </button>
-            )}
-
-            {submitted && (
-              <div className="bg-[#171513] text-white rounded-2xl p-6 mt-4">
+            {allFilled && (
+              <div className="bg-[#171513] text-white rounded-2xl p-6 mb-4">
                 <p className="text-xs opacity-60">YOUR GOAL</p>
-                <p className="text-2xl font-bold mb-4">₹{Number(data.goalAmount || 0).toLocaleString('en-IN')}</p>
+                <p className="text-2xl font-bold mb-4">{inr(data.goalAmount)}</p>
                 <p className="text-xs opacity-60">TIMELINE</p>
                 <p className="text-2xl font-bold mb-4">{years} year{years === 1 ? '' : 's'}</p>
                 <p className="text-xs opacity-60">THAT'S ABOUT</p>
-                <p className="text-3xl font-black text-[#E8893A]">₹{monthly.toLocaleString('en-IN')}/month</p>
+                <p className="text-3xl font-black text-[#E8893A]">{inr(monthly)}/month</p>
               </div>
             )}
+
+            <button
+              onClick={buildPlan}
+              disabled={!allFilled || loading}
+              className="w-full bg-[#171513] text-white py-4 rounded-xl font-bold hover:bg-[#E8893A] hover:text-[#171513] transition disabled:opacity-30 mt-2"
+            >
+              {loading ? 'saving your plan...' : (existingPlan ? 'Update my plan →' : 'Build my plan →')}
+            </button>
 
           </div>
         </div>

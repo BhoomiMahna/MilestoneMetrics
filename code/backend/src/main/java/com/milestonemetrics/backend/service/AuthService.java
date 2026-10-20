@@ -49,7 +49,7 @@ public class AuthService {
                     HttpStatus.UNAUTHORIZED, "Invalid email or password");
         }
 
-        String token = jwtUtil.generateToken(user.getEmail());
-        return new AuthResponse(token, user.getEmail(), user.getName());
+        String token = jwtUtil.generateToken(user.getEmail(), user.getRole().name());
+        return new AuthResponse(token, user.getEmail(), user.getName(), user.getRole().name());
     }
 }

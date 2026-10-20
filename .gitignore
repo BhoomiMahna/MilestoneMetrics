@@ -1,0 +1,34 @@
+# Environment / secrets
+.env
+*.env
+
+# Maven
+code/backend/target/
+code/backend/.mvn/repository/
+
+# IDE
+.idea/
+*.iml
+.vscode/
+*.swp
+
+# Node / frontend
+code/frontend/node_modules/
+code/frontend/dist/
+code/frontend/.vite/
+
+# Logs
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Local secrets and Claude Code folders
+.env
+.env.*
+**/.env
+**/.env.*
+.claude/
+**/.claude/
+*.bak
