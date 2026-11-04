@@ -1,6 +1,6 @@
 import { useState } from 'react'
 
-const API = 'http://localhost:8080'
+const API = 'https://milestonemetrics-backend.onrender.com'
 
 function Auth({ onAuth, notice }) {
   const [activeTab, setActiveTab] = useState('login')
