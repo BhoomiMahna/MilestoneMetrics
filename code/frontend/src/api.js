@@ -1,5 +1,5 @@
 // Shared API helpers. Base URL matches the existing Auth component.
-export const API = 'http://localhost:8080'
+export const API = 'https://milestonemetrics-backend.onrender.com'
 
 // Optional handler invoked when the session is no longer valid (401/403),
 // e.g. an expired JWT. App registers this to route the user back to login.
